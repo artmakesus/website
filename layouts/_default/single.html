@@ -1,0 +1,25 @@
+{{ partial "head.html" . }}
+<body class="{{ .Site.Params.themeColor }}">
+
+	{{ partial "nav.html" . }}
+
+	<div class="row" data-equalizer>
+
+		<div class="large-8 columns" data-equalizer-watch>
+			<div id="images">
+			{{range .Params.images }}
+				<img src="{{ $.Site.BaseURL }}{{ . }}" />
+			{{end}}
+			</div>
+		</div>
+
+		<div class="large-4 columns" data-equalizer-watch>
+			{{ .Content }}
+		</div>
+
+	</div>
+
+{{ partial "foot.html" . }}
+{{ partial "foot-single.html" . }}
+</body>
+</html>

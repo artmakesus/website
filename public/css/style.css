@@ -1,0 +1,3 @@
+.valign-wrapper { display: table; }
+.valign { display: table-cell; vertical-align: middle; }
+.uppercase { text-transform: uppercase; }
